@@ -1,7 +1,7 @@
 # AfroSec-Analytics
 SentinelPay: Real-Time Fraud Detection and Response
 
-1 PROJECT DESCRIPTION
+PROJECT DESCRIPTION
 The project aims to detect fraudulent activities in transaction data using anomaly detection models like Isolation Forest and One-Class SVM, alongside supervised models for comparison.
 Key steps include data preprocessing, model evaluation, and developing a real-time monitoring system to detect and respond to suspicious transactions. The system will classify anomalies, freeze affected accounts, and escalate unresolved cases for human review.
 
