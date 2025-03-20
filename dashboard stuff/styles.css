@@ -105,3 +105,39 @@ body {
     justify-content: space-between;
 }
 
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    text-align: center;
+    max-width: 90%;
+}
+.row {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+.employee {
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 150px;
+}
+.image-placeholder {
+    width: 150px;
+    height: 150px;
+    background: #ddd;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    font-size: 14px;
+    color: #555;
+}
+.info {
+    font-size: 14px;
+    font-weight: bold;
+}
+
