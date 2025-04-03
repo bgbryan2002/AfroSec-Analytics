@@ -1,16 +1,21 @@
 body {
     margin: 0;
-    font-family: Arial, sans-serif;
+    font-family: 'Courier New', Courier, monospace;
     display: flex;
 }
 
 /* Sidebar */
 .sidebar {
+    height: 100%;
     width: 220px;
     background: #0f0f0f;
-    height: 100vh;
     padding: 20px 0;
     box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    overflow-x: hidden;
+    z-index: 1;
+    top: 0;
+    left: 0;
 }
 
 .sidebar img {
@@ -39,13 +44,14 @@ body {
 
 /* Main content */
 .main {
+    margin-left: 220px;
     flex: 1;
     display: flex;
     flex-direction: column;
 }
 
 .topbar {
-    display: flex;
+    display:flex;
     justify-content: space-between;
     align-items: center;
     padding: 20px 20px;
@@ -73,8 +79,7 @@ body {
 }
 
 .content img {
-    width: 400px;
-    margin-bottom: 20px;
+    width: 380px;
 }
 
 .content h1 {
@@ -88,20 +93,22 @@ body {
 }
 
 .vision {
-    padding-right: 90%;
-    display: block;
+    display: flex;
+    text-align: center;
     justify-content: space-between;
 
 }
+.text p{
 
-.vision p{
     color: black;
+    font-size: large;
+    font-weight: 500;
 }
 
+
 .mission{
-    padding-top: 10%;
-    padding-right: 90%;
-    display: block;
+    display: flex;
+    text-align: center;
     justify-content: space-between;
 }
 
@@ -115,14 +122,14 @@ body {
 .row {
     display: flex;
     justify-content: center;
-    gap: 20px;
+    gap: 25px;
 }
 .employee {
     background: white;
     padding: 15px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    width: 150px;
+    width: 380px;
 }
 .image-placeholder {
     width: 150px;
@@ -137,7 +144,15 @@ body {
     color: #555;
 }
 .info {
-    font-size: 14px;
+    font-size: 20px;
     font-weight: bold;
+    text-align: center;
 }
 
+.deliverables h1{
+    font-size: 30px;
+    text-align: center;
+}
+.deliverables li{
+    font-size: large;
+}
