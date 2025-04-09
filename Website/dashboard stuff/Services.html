@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>About</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <div class="sidebar">
+            <img src="AfroSec Analytics.png" alt="AfroSec Logo">
+
+            <a href="Dashboard.html" ><i>🏠</i>Dashboard</a>
+            <a href="About.html"><i>🗂️</i>About</a>
+            <a href="Employees.html"><i>👥</i>Employees</a>
+            <a href="Services.html" class="active"><i>Ⓢ</i>Services</a>
+            <a href="#" onclick="checkAndOpenSentinelPay(event)" target="_blank"><i>🔔</i>SentinelPay</a>
+
+            <script>
+            function checkAndOpenSentinelPay(event) {
+                event.preventDefault(); // 🚫 stop default <a> behavior
+            
+                fetch("http://localhost:7860/", { mode: "no-cors" })
+                    .then(() => {
+                        window.open("http://localhost:7860/", "_blank");
+                    })
+                    .catch(() => {
+                        alert("SentinelPay is not running yet. Please make sure the backend is started.");
+                    });
+            }
+            </script>
+            <a href="#" style="position: absolute; bottom: 5%"><i>↩️</i>Log Out</a>
+        </div>
+    
+        <div class="main">
+            <div class="topbar">
+                <div style="font-size: 18px; font-weight: bold;">Services</div>
+                <div class="user">
+                    <span>Hi, User!</span>
+                </div>
+            </div>
+            <div class="content">
+            </div>
+        </div>
+    </body>
+    </html>
