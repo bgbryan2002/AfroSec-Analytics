@@ -95,5 +95,3 @@ function checkAndOpenSentinelPay(event) {
 ```
 
 ---
-
-Let me know if you'd like a downloadable `.bat` or `.sh` file to auto-run everything in one click.
